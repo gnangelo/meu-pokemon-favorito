@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { PokemonFavoritoComponent } from './pokemon-favorito/pokemon-favorito.component';
+import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    PokemonFavoritoComponent
+    PokemonFavoritoComponent,
+    PaginaErroComponent
   ],
   imports: [
     BrowserModule,
