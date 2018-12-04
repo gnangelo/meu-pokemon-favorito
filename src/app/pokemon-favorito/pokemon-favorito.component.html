@@ -12,20 +12,23 @@
   </div>    
       <!--Titulo-->
   <div class="container text-center mt-5">
-        <h4>Ola, John Doe.</h4>
+        <h4>Ola, {{ responseData.trainer }}</h4>
         <br>
         <p>Este e seu pokemon favorito abaixo<br>
-          Na cidade de Belzonte faz 25 graus agora.</p>
+          Na cidade de {{ responseData.city }}, 
+          Estado de {{ responseData.province}} 
+          faz 25 graus agora.</p>
   </div>
        <!--pokemon-->
-  <div class="container border py-5 my-5">
+  <div class="container border py-2 my-2">
         <!--imagem pokemon-->  
-        <div class="text-center">
-          <img src="https://pokemon.gameinfo.io/images/pokemon-go/131-00.png" class="rounded" alt="...">
+        <div class="text-center mb-3">
+          <img src="{{ responseData.imageUrl }}" class="rounded" alt="...">
         </div>
-      <h4>Lapras (Larry)</h4>
-      <p class="text-justify">Humanos quase levaram lapras a extinçao. Dizem que a tardinha este Pokemon canta 
-        melancolicamente procurando pelos outros que restaram da sua especie.</p>
+      <h4>{{ responseData.pokemonName }} <!--recebe o nome pokemon-->
+        ({{ responseData.pokemonAlias }}) <!--recebe o alias do nome-->
+      </h4>
+      <p class="text-justify">{{ responseData.pokemonDescription }}</p><!--recebe a descrição do pokemon-->
   </div>
 
 </div>

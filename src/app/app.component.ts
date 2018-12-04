@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Meu Pokemon Favorito';
+
+  public sairPagina = true;
+
+  public sairPaginaLogin(tipo: string): void {
+    this.sairPagina = false;
+ }
+
+  public sairPaginaPokemon(tipo: string): void {
+    this.sairPagina = false;
+  }
+
+  public sairPaginaErro(tipo: string): void {
+     this.sairPagina = false;
+  }
 }
