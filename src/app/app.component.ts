@@ -7,17 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public sairPagina = true;
+//   public sairPagina = true;
 
-  public sairPaginaLogin(tipo: string): void {
-    this.sairPagina = false;
- }
+//   public sairPaginaLogin(tipo: string): void {
+//     this.sairPagina = false;
+//  }
 
-  public sairPaginaPokemon(tipo: string): void {
-    this.sairPagina = false;
-  }
+//   public sairPaginaPokemon(tipo: string): void {
+//     this.sairPagina = false;
+//   }
 
-  public sairPaginaErro(tipo: string): void {
-     this.sairPagina = false;
-  }
+//   public sairPaginaErro(tipo: string): void {
+//      this.sairPagina = false;
+//   }
 }

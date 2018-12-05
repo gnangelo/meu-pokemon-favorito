@@ -6,17 +6,17 @@
       <!--Titulo-->
       <div class="text-white font-weight col-sm-12">
         <h4>Meu Pokemon Favorito
-          <a routerLink="/login" class="text-white link float-right">Sair</a>
+          <a routerLink="" class="text-white link float-right">Sair</a>
         </h4>      
       </div>
   </div>    
       <!--Titulo-->
   <div class="container text-center mt-5">
-        <h4>Ola, {{ responseData.trainer }}</h4>
+        <h4>Ola, {{ responseUsuario.trainer }}</h4>
         <br>
         <p>Este e seu pokemon favorito abaixo<br>
-          Na cidade de {{ responseData.city }}, 
-          Estado de {{ responseData.province}} 
+          Na cidade de {{ responseUsuario.city }}, 
+          Estado de {{ responseUsuario.province}} 
           faz 25 graus agora.</p>
   </div>
        <!--pokemon-->

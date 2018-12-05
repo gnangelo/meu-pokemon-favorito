@@ -5,9 +5,9 @@ import { LoginComponent } from './login/login.component';
 import { PaginaErroComponent } from './pagina-erro/pagina-erro.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent},
+  { path: '', component: LoginComponent},
   { path: 'pokemon-favorito', component: PokemonFavoritoComponent},
-  { path: 'pagina-erro', component: PaginaErroComponent}
+  { path: '**', component: PaginaErroComponent}
 ];
 
 @NgModule({

@@ -12,7 +12,7 @@ export class LoginService {
 
 
   onSubmit(autentica: any) {
-    return this.httpClient.post('http://n31qz.mocklab.io/login', autentica);
+    return this.httpClient.post('http://n31qz.mocklab.io/login', autentica, { headers: {'Content-type': 'application/json'}});
   }
 
   getMeuPokemon() {

@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { LoginService } from './../service/login.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
+import { Local } from 'protractor/built/driverProviders';
 
 
 @Component({
@@ -31,7 +32,7 @@ export class LoginComponent implements OnInit, OnDestroy {
     this.loginService.onSubmit(this.autenticar)
       .subscribe(response => {
         this.responseData = response;
-
+        localStorage.setItem('user', JSON.stringify(this.responseData));
         this.router.navigate(['/pokemon-favorito']);
       }, error => {
       console.log(error);

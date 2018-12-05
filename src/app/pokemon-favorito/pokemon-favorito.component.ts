@@ -11,10 +11,8 @@ import { LoginService } from '../service/login.service';
 
 export class PokemonFavoritoComponent implements OnInit, OnDestroy {
 
-  dados: any;
+  
   responseUsuario: any;
-
-
   responseData: any = {};
 
 
@@ -29,6 +27,7 @@ export class PokemonFavoritoComponent implements OnInit, OnDestroy {
     }, error => {
       console.log(error);
     });
+    this.responseUsuario = JSON.parse(localStorage.getItem('user'));
   }
 
 
