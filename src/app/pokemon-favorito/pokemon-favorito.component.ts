@@ -11,7 +11,6 @@ import { LoginService } from '../service/login.service';
 
 export class PokemonFavoritoComponent implements OnInit, OnDestroy {
 
-  
   responseUsuario: any;
   responseData: any = {};
 
